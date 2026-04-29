@@ -19,15 +19,18 @@ img {
         background-color: #134160;
     }
     .kontainer {
-        background-color: #4AA5D6;
         color: #191e27;
-        width: 1000px;
+        width: 1200px;
         margin: auto;
         font-family: "Libertinus Mono", monospace;
+        
     }
 /* Meny och titel */
     header {
+        background-color: #4AA5D6;
         text-align: center;
+        margin-top: 30px;
+        padding: 20px;
     }
     header h1 {
         font-size: 50px;
@@ -42,10 +45,19 @@ img {
     header a {
         text-decoration: none;
         margin-left: 30px;
+        background-color: #DFD1C1;
+        padding: 5px;
+        color: #F14949;
+    }
+    header .aktiv {
+        color: #ed1010;
+        background-color: #f3eadf;
     }
 /* Karaktärerna + kategorier */
     main {
-
+        background-color: #4AA5D6;
+        padding: 20px;
+        margin-top: 30px;
     }
     main h2 {
 
@@ -60,6 +72,8 @@ img {
     main .chefer a figure {
         background-color: #DFD1C1;
         width: 200px;
+        padding-top: 10px;
+        color: #F14949;
     }
     main .chefer a figure img {
         width: 90%;
@@ -69,5 +83,7 @@ img {
     }
 /* Slut/liten fotnot */
     footer {
-
+        background-color: #4AA5D6;
+        padding: 20px;
+        margin-top: 30px;
     }
