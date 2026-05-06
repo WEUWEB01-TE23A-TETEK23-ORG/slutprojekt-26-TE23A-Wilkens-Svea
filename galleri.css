@@ -59,31 +59,40 @@ img {
         padding: 20px;
         margin-top: 30px;
     }
-    main h2 {
-
+    main h2 {
+        margin-top: 20px;
     }
-    main .chefer {
+    main .characters {
         display: flex;
+        margin-top: 20px;
     }
-    main .chefer a {
+    main .characters a {
         text-decoration: none;
         text-align: center;
     }
-    main .chefer a figure {
+    main .characters a figure {
         background-color: #DFD1C1;
         width: 200px;
         padding-top: 10px;
         color: #F14949;
     }
-    main .chefer a figure img {
+    main .characters a figure img {
         width: 90%;
     }
-    main .chefer a figure figcaption {
+    main .characters a figure figcaption {
 
+    }
+    main .characters a figure:hover {
+        background-color: #e9dcce;
+        box-shadow: 3px 3px 3px #191e2759;
+        width: 200px;
+        padding-top: 10px;
+        color: #F14949;
     }
 /* Slut/liten fotnot */
     footer {
         background-color: #4AA5D6;
         padding: 20px;
         margin-top: 30px;
+        text-align: center;
     }
