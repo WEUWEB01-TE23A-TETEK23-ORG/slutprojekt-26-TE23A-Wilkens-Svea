@@ -119,3 +119,43 @@
         padding-top: 10px;
         color: #F14949;
     }
+/* Responsiv sida mindre skärm */
+     @media (max-width: 1200px){
+    .kontainer {
+        width: 100%;
+    }
+    }
+/* Responsiv sida padda */
+    @media (max-width: 768px){
+
+    }
+/* Responsiv sida mobil */
+         @media (max-width: 576px){
+        header h1 {
+            text-align: center;
+        }
+        header nav a {
+            display: block;
+            margin-bottom: 10px;
+            width: 95%;
+            margin-left: 10px;
+        }
+        aside {
+            margin: auto;
+        }
+            .kontainer {
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "sidhuvud"
+        "information"
+        "description"
+        "other";
+        }
+        aside {
+            margin: auto;
+        }
+          footer .relaterade {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    }

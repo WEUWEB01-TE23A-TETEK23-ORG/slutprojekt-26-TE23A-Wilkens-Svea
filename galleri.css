@@ -27,6 +27,7 @@ img {
     }
 /* Meny och titel */
     header {
+        width: 100%;
         background-color: #4AA5D6;
         text-align: center;
         margin-top: 30px;
@@ -55,6 +56,7 @@ img {
     }
 /* Karaktärerna + kategorier */
     main {
+        width: 100%;
         background-color: #4AA5D6;
         padding: 20px;
         margin-top: 30px;
@@ -69,6 +71,7 @@ img {
     main .characters a {
         text-decoration: none;
         text-align: center;
+        grid-area: karaktar;
     }
     main .characters a figure {
         background-color: #DFD1C1;
@@ -91,8 +94,47 @@ img {
     }
 /* Slut/liten fotnot */
     footer {
+        width: 100%;
         background-color: #4AA5D6;
         padding: 20px;
         margin-top: 30px;
         text-align: center;
+    }
+/* Responsiv sida mindre skärm */
+        @media (max-width: 1200px){
+        .kontainer {
+            width: 100%;
+        }
+    }
+ /* Responsiv sida padda */
+        @media (max-width: 768px){
+        header {
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "karaktar karaktar"
+            "karaktar karaktar"
+            ;
+        }
+    }
+ /* Responsiv sida mobil */
+         @media (max-width: 576px){
+        header h1 {
+            text-align: center;
+        }
+        header nav a {
+            display: block;
+            margin-bottom: 10px;
+            width: 95%;
+            margin-left: 10px;
+        }
+        main a {
+            display: grid;
+            grid-template-areas: 
+            "karaktar"
+            ;
+            grid-template-columns: auto;
+        }
+        aside {
+            margin: auto;
+        }
     }
