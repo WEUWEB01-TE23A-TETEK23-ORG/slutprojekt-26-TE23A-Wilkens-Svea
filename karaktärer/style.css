@@ -1,161 +1,185 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libertinus+Mono&display=swap');
+
 /* Sidan som helhet */
-    body {
-        background-color: #134160;
-    }
-    .kontainer {
-        color: #191e27;
-        width: 1200px;
-        margin: auto;
-        font-family: "Libertinus Mono", monospace;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 15px;
-        grid-template-areas: 
+body {
+    background-color: #134160;
+}
+
+.kontainer {
+    color: #191e27;
+    width: 1200px;
+    margin: auto;
+    font-family: "Libertinus Mono", monospace;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+    grid-template-areas:
         "sidhuvud sidhuvud"
         "description information"
         "other other";
-    }
+}
+
 /* Meny och Rubrik */
-    header {
-        grid-area: sidhuvud;
-        background-color: #4AA5D6;
-        text-align: center;
-        margin-top: 30px;
-        padding: 20px;
-    }
-    header h1 {
-        font-size: 50px;
-        font-family: "Bodoni Moda SC", serif;
-    }
-    header nav {
-        margin-top: 10px;
-        font-size: 30px;
-        font-family: "Bodoni Moda SC", serif;
-        font-weight: 900;
-        letter-spacing: 5px;
-    }
-    header nav a {
-        text-decoration: none;
-        margin-left: 30px;
-        background-color: #DFD1C1;
-        padding: 5px;
-        color: #F14949;
-    }
-     header nav a:hover {
-        text-decoration: none;
-        margin-left: 30px;
-        background-color: #f3eadf;
-        padding: 5px;
-        color: #ed1010;
-     }
+header {
+    grid-area: sidhuvud;
+    background-color: #4AA5D6;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: "Bodoni Moda SC", serif;
+}
+
+header nav {
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: "Bodoni Moda SC", serif;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin-left: 30px;
+    background-color: #DFD1C1;
+    padding: 5px;
+    color: #F14949;
+}
+
+header nav a:hover {
+    text-decoration: none;
+    margin-left: 30px;
+    background-color: #f3eadf;
+    padding: 5px;
+    color: #ed1010;
+}
+
 /* Om karaktären */
-    main {
-        grid-area: description;
-        background-color: #4AA5D6;
-        margin-top: 30px;
-        padding: 20px;
-    }
-    main h2 {
-        font-family: "Bodoni Moda SC", serif;
-    }
-    main h4 {
-        font-family: "Bodoni Moda SC", serif;
-    }
-    main p {
+main {
+    grid-area: description;
+    background-color: #4AA5D6;
+    margin-top: 30px;
+    padding: 20px;
+}
 
-    }
+main h2 {
+    font-family: "Bodoni Moda SC", serif;
+}
+
+main h4 {
+    font-family: "Bodoni Moda SC", serif;
+}
+
+main p {}
+
 /* Övrig info */
-    aside {
-        grid-area: information;
-        background-color: #4AA5D6;
-        margin-top: 30px;
-        padding: 20px;
-    }
-    aside h3 {
-        font-family: "Bodoni Moda SC", serif;
-    }
-    aside img {
-        width: 180px;
-        border: 7px solid #DFD1C1;
-    }
-    aside p {
+aside {
+    grid-area: information;
+    background-color: #4AA5D6;
+    margin-top: 30px;
+    padding: 20px;
+}
 
-    }
+aside h3 {
+    font-family: "Bodoni Moda SC", serif;
+}
+
+aside img {
+    width: 180px;
+    border: 7px solid #DFD1C1;
+}
+
+aside p {}
+
 /* Relaterade karaktärer */
-    footer {
-        grid-area: other;
-        background-color: #4AA5D6;
-        margin-top: 30px;
-        padding: 20px;
-    }
-    footer h3 {
-        font-family: "Bodoni Moda SC", serif;
-        font-size: 25px;
-    }
-    footer .relaterade {
-        display: flex;
-    }
-    footer a {
-        text-decoration: none;
-        text-align: center;
-    } 
-    footer a figure {
-        background-color: #DFD1C1;
-        width: 200px;
-        padding-top: 10px;
-        color: #F14949;
-    }
-    footer a figure img {
-        width: 90%;
-    }
-    footer a figure figcaption {
-        
-    }
-    footer a figure:hover {
-        background-color: #e9dcce;
-        box-shadow: 3px 3px 3px #191e2759;
-        width: 200px;
-        padding-top: 10px;
-        color: #F14949;
-    }
+footer {
+    grid-area: other;
+    background-color: #4AA5D6;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+footer h3 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 25px;
+}
+
+footer .relaterade {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer a {
+    text-decoration: none;
+    text-align: center;
+}
+
+footer a figure {
+    background-color: #DFD1C1;
+    width: 200px;
+    padding-top: 10px;
+    color: #F14949;
+}
+
+footer a figure img {
+    width: 90%;
+}
+
+footer a figure figcaption {}
+
+footer a figure:hover {
+    background-color: #e9dcce;
+    box-shadow: 3px 3px 3px #191e2759;
+    width: 200px;
+    padding-top: 10px;
+    color: #F14949;
+}
+
 /* Responsiv sida mindre skärm */
-     @media (max-width: 1200px){
+@media (max-width: 1200px) {
     .kontainer {
         width: 100%;
     }
-    }
-/* Responsiv sida padda */
-    @media (max-width: 768px){
+}
 
-    }
+/* Responsiv sida padda */
+@media (max-width: 768px) {}
+
 /* Responsiv sida mobil */
-         @media (max-width: 576px){
-        header h1 {
-            text-align: center;
-        }
-        header nav a {
-            display: block;
-            margin-bottom: 10px;
-            width: 95%;
-            margin-left: 10px;
-        }
-        aside {
-            margin: auto;
-        }
-            .kontainer {
+@media (max-width: 576px) {
+    header h1 {
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        margin-bottom: 10px;
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    aside {
+        margin: auto;
+    }
+
+    .kontainer {
         grid-template-columns: auto;
-        grid-template-areas: 
-        "sidhuvud"
-        "information"
-        "description"
-        "other";
-        }
-        aside {
-            margin: auto;
-        }
-          footer .relaterade {
+        grid-template-areas:
+            "sidhuvud"
+            "information"
+            "description"
+            "other";
+    }
+
+    aside {
+        margin: auto;
+    }
+
+    footer .relaterade {
         display: grid;
         grid-template-columns: auto;
     }
-    }
+}
